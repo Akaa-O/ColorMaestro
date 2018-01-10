@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "856138255339",
+    "project_id": "color-maestro"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856138255339:android:2013270702ac7ca2",
+        "android_client_info": {
+          "package_name": "akaa.com.colormaestro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856138255339-g9kfolq8m754a023smomvsnqdi330q63.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "akaa.com.colormaestro",
+            "certificate_hash": "5004c1ed1231fb70b93ce6b7eaafb3d87ce26a14"
+          }
+        },
+        {
+          "client_id": "856138255339-9i3pl70i5hq5rl3npg0ltsi018k43cki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbIb9lzRiI4rOtSxgunQ2TgDkkFnFCrgw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

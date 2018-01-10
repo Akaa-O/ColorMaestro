@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="akaa.com.colormaestro">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mainicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/mainicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ModeSelect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".game_modes.ClassicGame"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PauseMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".GameOver"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StatsMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HelpMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".game_modes.SplitGame"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".game_modes.InvertedGame"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FirstHelpMenu"></activity>
+    </application>
+
+</manifest>
