@@ -92,14 +92,20 @@ public class PauseMenu extends AppCompatActivity {
     @Override
     public void onPause(){
         super.onPause();
-        if(GlobalVariables.continueMusic == false && MainActivity.soundTrack.isPlaying()){
-            MainActivity.soundTrack.pause();
+        if(MainActivity.soundTrack != null) {
+            if (GlobalVariables.continueMusic == false && MainActivity.soundTrack.isPlaying()) {
+                MainActivity.soundTrack.pause();
+            }
         }
-        if(GlobalVariables.continueMusic == false && MainActivity.soundTrack2.isPlaying()){
-            MainActivity.soundTrack2.pause();
+        if(MainActivity.soundTrack2 != null) {
+            if (GlobalVariables.continueMusic == false && MainActivity.soundTrack2.isPlaying()) {
+                MainActivity.soundTrack2.pause();
+            }
         }
-        if(GlobalVariables.continueMusic == false && MainActivity.soundTrack3.isPlaying()){
-            MainActivity.soundTrack3.pause();
+        if(MainActivity.soundTrack3 != null) {
+            if (GlobalVariables.continueMusic == false && MainActivity.soundTrack3.isPlaying()) {
+                MainActivity.soundTrack3.pause();
+            }
         }
     }
 
@@ -107,20 +113,26 @@ public class PauseMenu extends AppCompatActivity {
     public void onResume(){
         super.onResume();
         buttonPressed = false;
-        if(MainActivity.soundTrack != null && MainActivity.soundTrack.isPlaying() == false){ //all activities opened from a game mode uses the game mode's preferences to avoid null pointers upon mode restart
-            if(ClassicGame.classicPrefs.getBoolean(GlobalVariables.musicSwitch,true)) {
-                MainActivity.soundTrack.start();
+        if(MainActivity.soundTrack != null) {
+            if (MainActivity.soundTrack != null && MainActivity.soundTrack.isPlaying() == false) {
+                if (ClassicGame.classicPrefs.getBoolean(GlobalVariables.musicSwitch, true)) {
+                    MainActivity.soundTrack.start();
+                }
             }
         }
-        if(MainActivity.soundTrack2 != null && MainActivity.soundTrack2.isPlaying() == false
-                && GlobalVariables.queryInt("score") >= GlobalVariables.soundtrack2ActivationThreshold && GlobalVariables.queryInt("score") < GlobalVariables.soundtrack3ActivationThreshold){
-            if(ClassicGame.classicPrefs.getBoolean(GlobalVariables.musicSwitch,true)) {
-                MainActivity.soundTrack2.start();
+        if(MainActivity.soundTrack2 != null) {
+            if (MainActivity.soundTrack2 != null && MainActivity.soundTrack2.isPlaying() == false
+                    && GlobalVariables.queryInt("score") >= GlobalVariables.soundtrack2ActivationThreshold && GlobalVariables.queryInt("score") < GlobalVariables.soundtrack3ActivationThreshold) {
+                if (ClassicGame.classicPrefs.getBoolean(GlobalVariables.musicSwitch, true)) {
+                    MainActivity.soundTrack2.start();
+                }
             }
         }
-        if(MainActivity.soundTrack3 != null && MainActivity.soundTrack3.isPlaying() == false && GlobalVariables.queryInt("score") >= GlobalVariables.soundtrack3ActivationThreshold){
-            if(ClassicGame.classicPrefs.getBoolean(GlobalVariables.musicSwitch,true)) {
-                MainActivity.soundTrack3.start();
+        if(MainActivity.soundTrack3 != null) {
+            if (MainActivity.soundTrack3 != null && MainActivity.soundTrack3.isPlaying() == false && GlobalVariables.queryInt("score") >= GlobalVariables.soundtrack3ActivationThreshold) {
+                if (ClassicGame.classicPrefs.getBoolean(GlobalVariables.musicSwitch, true)) {
+                    MainActivity.soundTrack3.start();
+                }
             }
         }
 

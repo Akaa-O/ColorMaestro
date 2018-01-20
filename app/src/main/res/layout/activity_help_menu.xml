@@ -185,7 +185,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView10"
                 app:layout_constraintVertical_bias="0.028"
-                app:srcCompat="@drawable/destroy" />
+                app:srcCompat="@drawable/nuke" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -194,7 +194,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_weight="0.36"
                 android:fontFamily="casual"
-                android:text="Bomb - Destroys all blocks on the screen, giving you a point for each block destroyed"
+                android:text="Nuke - Destroys all blocks on the screen, giving you a point for each block destroyed"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textSize="18sp" />
 

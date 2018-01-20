@@ -55,7 +55,7 @@ public class ClassicGame extends AppCompatActivity {
     private static ConstraintLayout classicGameLayout;
     private Context context;
 
-    private static TextView countdown;
+    private TextView countdown;
     private boolean countdownActive = false; //prevents pause menu  from being activated when countdown is active
     private static int currentCountdownNum = 3; //controls the countdown value shown when resuming a paused game in onResume
     private double blockDimen; //width and height of the block
@@ -406,14 +406,20 @@ public class ClassicGame extends AppCompatActivity {
             }
         }
 
-        if(GlobalVariables.continueMusic == false && MainActivity.soundTrack.isPlaying()){
-            MainActivity.soundTrack.pause();
+        if(MainActivity.soundTrack != null) {
+            if (GlobalVariables.continueMusic == false && MainActivity.soundTrack.isPlaying()) {
+                MainActivity.soundTrack.pause();
+            }
         }
-        if(GlobalVariables.continueMusic == false && MainActivity.soundTrack2.isPlaying()){
-            MainActivity.soundTrack2.pause();
+        if(MainActivity.soundTrack2 != null) {
+            if (GlobalVariables.continueMusic == false && MainActivity.soundTrack2.isPlaying()) {
+                MainActivity.soundTrack2.pause();
+            }
         }
-        if(GlobalVariables.continueMusic == false && MainActivity.soundTrack3.isPlaying()){
-            MainActivity.soundTrack3.pause();
+        if(MainActivity.soundTrack3 != null) {
+            if (GlobalVariables.continueMusic == false && MainActivity.soundTrack3.isPlaying()) {
+                MainActivity.soundTrack3.pause();
+            }
         }
 
 
@@ -453,20 +459,26 @@ public class ClassicGame extends AppCompatActivity {
             resumeDelayTimer.schedule(resumeDelay,3000);
         }
 
-        if(MainActivity.soundTrack != null && MainActivity.soundTrack.isPlaying() == false){
-            if(classicPrefs.getBoolean(GlobalVariables.musicSwitch,true)) {
-                MainActivity.soundTrack.start();
+        if(MainActivity.soundTrack != null) {
+            if (MainActivity.soundTrack != null && MainActivity.soundTrack.isPlaying() == false) {
+                if (classicPrefs.getBoolean(GlobalVariables.musicSwitch, true)) {
+                    MainActivity.soundTrack.start();
+                }
             }
         }
-        if(MainActivity.soundTrack2 != null && MainActivity.soundTrack2.isPlaying() == false
-                && GlobalVariables.queryInt("score") >= GlobalVariables.soundtrack2ActivationThreshold && GlobalVariables.queryInt("score") < GlobalVariables.soundtrack3ActivationThreshold){
-            if(classicPrefs.getBoolean(GlobalVariables.musicSwitch,true)) {
-                MainActivity.soundTrack2.start();
+        if(MainActivity.soundTrack2 != null) {
+            if (MainActivity.soundTrack2 != null && MainActivity.soundTrack2.isPlaying() == false
+                    && GlobalVariables.queryInt("score") >= GlobalVariables.soundtrack2ActivationThreshold && GlobalVariables.queryInt("score") < GlobalVariables.soundtrack3ActivationThreshold) {
+                if (classicPrefs.getBoolean(GlobalVariables.musicSwitch, true)) {
+                    MainActivity.soundTrack2.start();
+                }
             }
         }
-        if(MainActivity.soundTrack3 != null && MainActivity.soundTrack3.isPlaying() == false && GlobalVariables.queryInt("score") >= GlobalVariables.soundtrack3ActivationThreshold){
-            if(classicPrefs.getBoolean(GlobalVariables.musicSwitch,true)) {
-                MainActivity.soundTrack3.start();
+        if(MainActivity.soundTrack3 != null) {
+            if (MainActivity.soundTrack3 != null && MainActivity.soundTrack3.isPlaying() == false && GlobalVariables.queryInt("score") >= GlobalVariables.soundtrack3ActivationThreshold) {
+                if (classicPrefs.getBoolean(GlobalVariables.musicSwitch, true)) {
+                    MainActivity.soundTrack3.start();
+                }
             }
         }
     }

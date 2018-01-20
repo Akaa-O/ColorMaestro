@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">Color Maestro</string>
 
+    <string name="leaderboards_exception">There was an issue communicating with leaderboards.</string>
+
+
+    <string name="status_exception_error">%1$s (status %2$d). %3$s.</string>
     <string name="title_activity_pause_menu">PauseMenu</string>
+
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

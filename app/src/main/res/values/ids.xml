@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+    <!-- app_id -->
+    <string name="app_id" translatable="false">661898295973</string>
+    <!-- package_name -->
+    <string name="package_name" translatable="false">akaa.com.colormaestro</string>
+    <!-- leaderboard Best Score -->
+    <string name="leaderboard_best_score" translatable="false">CgkIpfXZ4aETEAIQAQ</string>
+</resources>

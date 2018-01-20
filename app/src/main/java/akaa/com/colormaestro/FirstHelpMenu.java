@@ -40,15 +40,28 @@ public class FirstHelpMenu extends AppCompatActivity {
     }
 
     @Override
-    public void onResume(){
-        super.onResume();
-        buttonPressed = false;
-        if(MainActivity.soundTrack != null && MainActivity.soundTrack.isPlaying() == false){
-            if(MainActivity.prefs.getBoolean(GlobalVariables.musicSwitch,true)) {
-                MainActivity.soundTrack.start();
+    public void onPause(){
+        super.onPause();
+        if(MainActivity.soundTrack != null) {
+            if (GlobalVariables.continueMusic == false && MainActivity.soundTrack.isPlaying()) {
+                MainActivity.soundTrack.pause();
             }
         }
     }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        buttonPressed = false;
+        if(MainActivity.soundTrack != null) {
+            if (MainActivity.soundTrack.isPlaying() == false) {
+                if (MainActivity.prefs.getBoolean(GlobalVariables.musicSwitch, true)) {
+                    MainActivity.soundTrack.start();
+                }
+            }
+        }
+    }
+
 
     private void launchClassicGame(){
         Intent intent = new Intent(this, ClassicGame.class);

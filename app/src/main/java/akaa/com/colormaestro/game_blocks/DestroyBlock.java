@@ -86,7 +86,7 @@ public class DestroyBlock {
                 blockView.setX(posX);
                 blockView.setY(posY);
 
-                blockView.setImageResource(R.drawable.destroy);
+                blockView.setImageResource(R.drawable.nuke);
                 moveBlock();
 
 

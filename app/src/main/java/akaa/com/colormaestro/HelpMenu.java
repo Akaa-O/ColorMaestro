@@ -31,8 +31,10 @@ public class HelpMenu extends AppCompatActivity {
     @Override
     public void onPause(){
         super.onPause();
-        if(GlobalVariables.continueMusic == false && MainActivity.soundTrack.isPlaying()){
-            MainActivity.soundTrack.pause();
+        if(MainActivity.soundTrack != null) {
+            if (GlobalVariables.continueMusic == false && MainActivity.soundTrack.isPlaying()) {
+                MainActivity.soundTrack.pause();
+            }
         }
     }
 
@@ -40,11 +42,12 @@ public class HelpMenu extends AppCompatActivity {
     public void onResume(){
         super.onResume();
         buttonPressed = false;
-        if(MainActivity.soundTrack != null && MainActivity.soundTrack.isPlaying() == false){
-            if(MainActivity.prefs.getBoolean(GlobalVariables.musicSwitch,true)) {
-                MainActivity.soundTrack.start();
+        if(MainActivity.soundTrack != null) {
+            if (MainActivity.soundTrack.isPlaying() == false) {
+                if (MainActivity.prefs.getBoolean(GlobalVariables.musicSwitch, true)) {
+                    MainActivity.soundTrack.start();
+                }
             }
         }
-
     }
 }
