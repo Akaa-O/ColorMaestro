@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ColorMaestro.iml" filepath="$PROJECT_DIR$/ColorMaestro.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ColorMaestro.iml" filepath="$PROJECT_DIR$/.idea/ColorMaestro.iml" group="ColorMaestro" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ColorMaestro/app" />
     </modules>
   </component>
 </project>
