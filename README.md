@@ -9,3 +9,7 @@ At the moment, only the Main screen has been fully refactored to follow MVP arch
  
 # Screens
 <img src="Screens/home.png" width="200"/> <img src="Screens/howto.png" width="200"/> 
+<img src="Screens/gif1.gif" width="200"/> <img src="Screens/gif2.gif" width="200"/> 
+<img src="Screens/modes.png" width="200"/> <img src="Screens/pause.png" width="200"/>
+<img src="Screens/gif3.gif" width="200"/> <img src="Screens/gif4.gif" width="200"/> 
+<img src="Screens/gameover.png" width="200"/> <img src="Screens/stats.png" width="200"/>
