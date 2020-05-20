@@ -8,8 +8,4 @@ as the gems rush down the screen with screen changes, powerups, and traps to add
 At the moment, only the Main screen has been fully refactored to follow MVP architecture
  
 # Screens
-<img src="Screens/gameover.png"  width="200"/>
-
-![](Screens/gif1.gif) 
-![](Screens/gameover.png)
-
+<img src="Screens/home.png" width="200"/> <img src="Screens/howto.png" width="200"/> 
