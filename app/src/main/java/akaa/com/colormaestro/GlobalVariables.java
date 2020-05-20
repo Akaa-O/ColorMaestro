@@ -1,20 +1,33 @@
 package akaa.com.colormaestro;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.games.LeaderboardsClient;
 
-import akaa.com.colormaestro.game_blocks.GameBlock;
-import akaa.com.colormaestro.game_blocks.HitBox;
+import java.util.ArrayList;
+
+import akaa.com.colormaestro.model.game_blocks.GameBlock;
+import akaa.com.colormaestro.model.game_blocks.HitBox;
 
 /**
  * Created by Akachukwu Okonkwo on 9/27/2017.
  */
 
 public class GlobalVariables {
+    public static SharedPreferences prefs;
+
+    public static GoogleSignInClient mGoogleSignInClient;
+    public static GoogleSignInAccount signedInAccount;
+    public static LeaderboardsClient mLeaderboardsClient;
+
+    // request codes we use when invoking an external activity
+    public static final int RC_UNUSED = 5001;
+    public static final int RC_SIGN_IN = 9001;
+
     public static boolean continueMusic = false; //allows us to pause music when navigated out of app but continue if activities are changed (onpause functions)
 
     public static final String appPreference = "playerData";

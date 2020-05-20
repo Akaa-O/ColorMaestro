@@ -14,7 +14,7 @@
             android:value="@integer/google_play_services_version"/>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,34 +23,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ModeSelect"
+            android:name=".ui.game_modes.ModeSelectActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".game_modes.ClassicGame"
+            android:name=".ui.game_modes.classic.ClassicActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".PauseMenu"
+            android:name=".ui.pause.PauseActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".GameOver"
+            android:name=".ui.game_over.GameOverActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SettingsMenu"
+            android:name=".ui.settings.SettingsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".StatsMenu"
+            android:name=".ui.stats.StatsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HelpMenu"
+            android:name=".ui.help.HelpActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".game_modes.SplitGame"
+            android:name=".ui.game_modes.split.SplitActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".game_modes.InvertedGame"
+            android:name=".ui.game_modes.inverted.InvertedActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".FirstHelpMenu"></activity>
+        <activity android:name=".ui.help.FirstHelpMenu"></activity>
     </application>
 
 </manifest>

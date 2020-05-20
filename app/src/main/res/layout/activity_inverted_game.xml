@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="akaa.com.colormaestro.game_modes.InvertedGame">
+    tools:context=".ui.game_modes.inverted.InvertedActivity">
 
     <TextView
         android:id="@+id/textView19"

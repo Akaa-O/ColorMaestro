@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="akaa.com.colormaestro.GameOver">
+    tools:context="akaa.com.colormaestro.ui.game_over.GameOverActivity">
 
     <Button
         android:id="@+id/retryButtonG"

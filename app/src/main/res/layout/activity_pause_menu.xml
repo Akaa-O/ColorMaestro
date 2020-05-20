@@ -5,7 +5,7 @@
     android:id="@+id/pauseMenu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="akaa.com.colormaestro.PauseMenu">
+    tools:context="akaa.com.colormaestro.ui.pause.PauseActivity">
 
     <Button
         android:id="@+id/resumeButton"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="akaa.com.colormaestro.ModeSelect"
+    tools:context="akaa.com.colormaestro.ui.game_modes.ModeSelectActivity"
     tools:layout_editor_absoluteY="0dp"
     tools:layout_editor_absoluteX="0dp"
     android:id="@+id/modeSelect">
