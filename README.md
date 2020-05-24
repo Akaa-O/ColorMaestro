@@ -1,5 +1,5 @@
 # ColorMaestro
-Action mobile game that requires the player to tap the gems whose color correspond to the screen's color, 
+Action mobile game I built a while back that requires the player to tap the gems whose color correspond to the screen's color, 
 as the gems rush down the screen. Screen changes, powerups, and traps add to the fun. 
 
 # Important Info
